@@ -1,13 +1,13 @@
-package com.sly.fescar.business;
+package com.sly.fescar.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FescarDubboBusinessApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FescarDubboBusinessApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
