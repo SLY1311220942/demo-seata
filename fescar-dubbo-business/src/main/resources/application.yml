@@ -1,1 +1,27 @@
-
+#========================================server config=====================================
+server:
+  port: 7100
+#========================================dubbo config=====================================
+dubbo:
+  application:
+    id: fescar-dubbo-business
+    name: fescar-dubbo-business
+    qos-enable: false
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 20881
+  registry:
+    id: fescar-dubbo-business
+    address: zookeeper://127.0.0.1:2181
+    protocol: zookeeper
+  scan:
+    base-packages:
+    - com.sly.fescar.business.service
+    - com.sly.fescar.order.service
+    - com.sly.fescar.account.service
+    - com.sly.fescar.storage.service
+#========================================spring config=====================================
+spring:
+  application:
+    name: fescar-dubbo-business

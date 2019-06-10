@@ -7,22 +7,19 @@
 		<artifactId>fescar-dubbo</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>fescar-dubbo-order-api</artifactId>
-	
+	<artifactId>fescar-dubbo-common</artifactId>
+
 	<dependencies>
+		<!-- 工具包 -->
 		<dependency>
-			<groupId>com.sly</groupId>
-			<artifactId>fescar-dubbo-common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+		</dependency>
+
 	</dependencies>
-	
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+
 </project>

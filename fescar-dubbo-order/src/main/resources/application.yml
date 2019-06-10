@@ -1,1 +1,35 @@
+#========================================server config=====================================
+server:
+  port: 9200
+#========================================dubbo config=====================================
+dubbo:
+  application:
+    id: fescar-dubbo-order
+    name: fescar-dubbo-order
+    qos-enable: false
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 20883
+  registry:
+    id: fescar-dubbo-order
+    address: zookeeper://127.0.0.1:2181
+    protocol: zookeeper
+  scan:
+    base-packages:
+    - com.sly.fescar.order.service
+#========================================spring config=====================================
+spring:
+  application:
+    name: fescar-dubbo-order
+#========================================MySQL config=====================================
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://106.14.142.209:3306/fescardubbo?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    name: root
+    password: 123456
+#========================================mybatis config=====================================
+mybatis:
+  mapper-locations:
+  - classpath*:/mapper/*.xml
 

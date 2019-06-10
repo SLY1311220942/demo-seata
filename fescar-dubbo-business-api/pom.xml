@@ -9,6 +9,14 @@
 	</parent>
 	<artifactId>fescar-dubbo-business-api</artifactId>
 	
+	<dependencies>
+		<dependency>
+			<groupId>com.sly</groupId>
+			<artifactId>fescar-dubbo-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	
 	<build>
 		<plugins>
 			<plugin>

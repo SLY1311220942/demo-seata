@@ -1,5 +1,7 @@
 package com.sly.fescar.order.service;
 
+import java.util.Map;
+
 /**
  * 订单service
  * 
@@ -7,5 +9,14 @@ package com.sly.fescar.order.service;
  * @time 2019年6月10日
  */
 public interface OrderService {
+	/**
+	 * 新增
+	 * 
+	 * @param orderId
+	 * @return
+	 * @author sly
+	 * @time 2019年6月10日
+	 */
+	Map<String, Object> insert(String orderId);
 
 }
