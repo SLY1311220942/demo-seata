@@ -19,7 +19,23 @@
 			<artifactId>fescar-dubbo-business-api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>com.sly</groupId>
+			<artifactId>fescar-dubbo-account-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sly</groupId>
+			<artifactId>fescar-dubbo-storage-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sly</groupId>
+			<artifactId>fescar-dubbo-order-api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -33,7 +49,13 @@
 			<artifactId>dubbo-spring-boot-starter</artifactId>
 			<version>0.2.1.RELEASE</version>
 		</dependency>
-
+		
+		<!-- seata -->
+		<dependency>
+            <groupId>io.seata</groupId>
+            <artifactId>seata-all</artifactId>
+            <version>0.6.1</version>
+        </dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
