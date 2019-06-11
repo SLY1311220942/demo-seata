@@ -34,5 +34,13 @@
 	<modules>
 		<module>../fescar-dubbo-business</module>
 		<module>../fescar-dubbo-business-api</module>
+		<module>../fescar-dubbo-account</module>
+		<module>../fescar-dubbo-account-api</module>
+		<module>../fescar-dubbo-order</module>
+		<module>../fescar-dubbo-order-api</module>
+		<module>../fescar-dubbo-storage</module>
+		<module>../fescar-dubbo-storage-api</module>
+		<module>../fescar-dubbo-common</module>
+		<module>../fescar-dubbo-web</module>
 	</modules>
 </project>
