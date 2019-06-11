@@ -21,6 +21,8 @@ import com.sly.fescar.common.utils.DateUtils;
 import com.sly.fescar.order.service.OrderService;
 import com.sly.fescar.storage.service.StorageService;
 
+import io.seata.spring.annotation.GlobalTransactional;
+
 /**
  * 业务service实现
  * 
@@ -48,6 +50,7 @@ public class BusinessServiceImpl implements BusinessService {
 	 * @author sly
 	 * @time 2019年6月10日
 	 */
+	@GlobalTransactional
 	@Override
 	public Map<String, Object> purchase(String accountId, String orderId, String storageId) {
 		try {

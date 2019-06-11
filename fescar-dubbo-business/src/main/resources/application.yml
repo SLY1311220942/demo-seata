@@ -25,3 +25,6 @@ dubbo:
 spring:
   application:
     name: fescar-dubbo-business
+  devtools:
+    restart:
+      enabled: false

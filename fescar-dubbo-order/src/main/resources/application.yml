@@ -22,6 +22,9 @@ dubbo:
 spring:
   application:
     name: fescar-dubbo-order
+  devtools:
+    restart:
+      enabled: false
 #========================================MySQL config=====================================
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver

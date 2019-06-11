@@ -10,6 +10,8 @@ import com.sly.fescar.account.mapper.AccountMapper;
 import com.sly.fescar.account.service.AccountService;
 import com.sly.fescar.common.model.account.Account;
 
+import io.seata.core.context.RootContext;
+
 /**
  * 账户service实现
  * 
@@ -32,6 +34,8 @@ public class AccountServiceImpl implements AccountService {
 	 */
 	@Override
 	public Map<String, Object> insert(Account account) {
+		System.out.println("全局事务id:" + RootContext.getXID());
+		
 		accountMapper.insert(account);
 		Map<String, Object> result = new HashMap<>(16);
 		result.put("status", 200);

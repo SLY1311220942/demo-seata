@@ -10,6 +10,8 @@ import com.sly.fescar.common.model.storage.Storage;
 import com.sly.fescar.storage.mapper.StorageMapper;
 import com.sly.fescar.storage.service.StorageService;
 
+import io.seata.core.context.RootContext;
+
 /**
  * 仓储service实现
  * 
@@ -32,6 +34,8 @@ public class StorageServiceImpl implements StorageService {
 	 */
 	@Override
 	public Map<String, Object> insert(Storage storage) {
+		System.out.println("全局事务id:" + RootContext.getXID());
+		
 		storageMapper.insert(storage);
 		Map<String, Object> result = new HashMap<>(16);
 		result.put("status", 200);

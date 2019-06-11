@@ -10,6 +10,8 @@ import com.sly.fescar.common.model.order.Order;
 import com.sly.fescar.order.mapper.OrderMapper;
 import com.sly.fescar.order.service.OrderService;
 
+import io.seata.core.context.RootContext;
+
 /**
  * 订单service实现
  * 
@@ -32,6 +34,8 @@ public class OrderServiceImpl implements OrderService {
 	 */
 	@Override
 	public Map<String, Object> insert(Order order) {
+		System.out.println("全局事务id:" + RootContext.getXID());
+		//int a = 10/0;
 		orderMapper.insert(order);
 		Map<String, Object> result = new HashMap<>(16);
 		result.put("status", 200);
