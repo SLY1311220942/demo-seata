@@ -2,6 +2,8 @@ package com.sly.fescar.storage.service;
 
 import java.util.Map;
 
+import com.sly.fescar.common.model.storage.Storage;
+
 /**
  * 仓储service
  * 
@@ -9,14 +11,15 @@ import java.util.Map;
  * @time 2019年6月10日
  */
 public interface StorageService {
+
 	/**
-	 * 修改
+	 * 新增
 	 * 
-	 * @param storageId
+	 * @param storage
 	 * @return
 	 * @author sly
-	 * @time 2019年6月10日
+	 * @time 2019年6月11日
 	 */
-	Map<String, Object> update(String storageId);
+	Map<String, Object> insert(Storage storage);
 
 }

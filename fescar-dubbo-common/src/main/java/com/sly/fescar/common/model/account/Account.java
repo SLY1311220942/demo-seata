@@ -18,7 +18,7 @@ public class Account implements Serializable {
 	/** decimal(18,6) NULL金额 */
 	private BigDecimal amount;
 	/** varchar(32) NULL账户名称 */
-	private String name;
+	private String accountName;
 	/** char(1) NULL逻辑删除 Y:删除 N:未删除 */
 	private String logicDel;
 	/** varchar(240) NULL备注 */
@@ -40,12 +40,12 @@ public class Account implements Serializable {
 		this.amount = amount;
 	}
 
-	public String getName() {
-		return name;
+	public String getAccountName() {
+		return accountName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setAccountName(String accountName) {
+		this.accountName = accountName;
 	}
 
 	public String getLogicDel() {

@@ -2,6 +2,8 @@ package com.sly.fescar.account.service;
 
 import java.util.Map;
 
+import com.sly.fescar.common.model.account.Account;
+
 /**
  * 账户service
  * 
@@ -11,13 +13,13 @@ import java.util.Map;
 public interface AccountService {
 
 	/**
-	 * 修改
+	 * 新增
 	 * 
-	 * @param accountId
+	 * @param account
 	 * @return
 	 * @author sly
-	 * @time 2019年6月10日
+	 * @time 2019年6月11日
 	 */
-	Map<String, Object> update(String accountId);
+	Map<String, Object> insert(Account account);
 
 }

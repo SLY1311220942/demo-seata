@@ -17,7 +17,7 @@ public class Storage implements Serializable {
 	/** varchar(32) NULL仓储名称 */
 	private String storageName;
 	/** int(11) NULL数量 */
-	private Integer count;
+	private Integer storageCount;
 	/** char(1) NULL逻辑删除 Y:删除 N:未删除 */
 	private String logicDel;
 	/** varchar(240) NULL备注 */
@@ -39,12 +39,12 @@ public class Storage implements Serializable {
 		this.storageName = storageName;
 	}
 
-	public Integer getCount() {
-		return count;
+	public Integer getStorageCount() {
+		return storageCount;
 	}
 
-	public void setCount(Integer count) {
-		this.count = count;
+	public void setStorageCount(Integer storageCount) {
+		this.storageCount = storageCount;
 	}
 
 	public String getLogicDel() {

@@ -69,6 +69,13 @@
 			</exclusions>
 			<version>2.7.1</version>
 		</dependency>
+		<!-- Zookeeper dependencies -->
+		<dependency>
+			<groupId>org.apache.dubbo</groupId>
+			<artifactId>dubbo-dependencies-zookeeper</artifactId>
+			<version>2.7.1</version>
+			<type>pom</type>
+		</dependency>
 
 		<!-- seata -->
 		<dependency>

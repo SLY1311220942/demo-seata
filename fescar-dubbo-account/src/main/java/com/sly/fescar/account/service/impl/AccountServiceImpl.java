@@ -1,10 +1,14 @@
 package com.sly.fescar.account.service.impl;
 
+import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.dubbo.config.annotation.Service;
+import org.springframework.beans.factory.annotation.Autowired;
 
+import com.sly.fescar.account.mapper.AccountMapper;
 import com.sly.fescar.account.service.AccountService;
+import com.sly.fescar.common.model.account.Account;
 
 /**
  * 账户service实现
@@ -14,19 +18,25 @@ import com.sly.fescar.account.service.AccountService;
  */
 @Service
 public class AccountServiceImpl implements AccountService {
+	
+	@Autowired
+	private AccountMapper accountMapper;
 
 	/**
-	 * 修改
+	 * 新增
 	 * 
-	 * @param accountId
+	 * @param account
 	 * @return
 	 * @author sly
-	 * @time 2019年6月10日
+	 * @time 2019年6月11日
 	 */
 	@Override
-	public Map<String, Object> update(String accountId) {
-
-		return null;
+	public Map<String, Object> insert(Account account) {
+		accountMapper.insert(account);
+		Map<String, Object> result = new HashMap<>(16);
+		result.put("status", 200);
+		result.put("message", "新增成功！");
+		return result;
 	}
 
 }

@@ -2,6 +2,8 @@ package com.sly.fescar.order.service;
 
 import java.util.Map;
 
+import com.sly.fescar.common.model.order.Order;
+
 /**
  * 订单service
  * 
@@ -12,11 +14,11 @@ public interface OrderService {
 	/**
 	 * 新增
 	 * 
-	 * @param orderId
+	 * @param order
 	 * @return
 	 * @author sly
 	 * @time 2019年6月10日
 	 */
-	Map<String, Object> insert(String orderId);
+	Map<String, Object> insert(Order order);
 
 }
