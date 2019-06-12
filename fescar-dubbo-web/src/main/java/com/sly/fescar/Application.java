@@ -1,4 +1,4 @@
-package com.sly.fescar.controller;
+package com.sly.fescar;
 
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
